@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./inheritance.js"></script>
+    <script>
+
+        window.onload = function(){
+            var presenter = new Presenter();
+            var dv = document.getElementById("dv");
+            dv.innerHTML = presenter.generateTable();
+
+        };
+
+    </script>
+</head>
+<body>
+    <div id="dv">
+
+    </div>
+</body>
+</html>

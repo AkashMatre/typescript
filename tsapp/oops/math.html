@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./simpleClass.js"></script>
+    <script>
+        window.onload = function(){
+            var btnAdd = document.getElementById("btnAdd");
+            btnAdd.addEventListener("click",function(){
+                var x = document.getElementById("x").value;
+                var y = document.getElementById("y").value;
+                var obj = new MathClass( parseInt( x) , parseInt( y));
+                document.getElementById("z").value = obj.add();
+            },false);
+            var btnSub = document.getElementById("btnSub");
+            btnSub.addEventListener("click",function(){
+                var x = document.getElementById("x").value;
+                var y = document.getElementById("y").value;
+                var obj = new MathClass(parseInt( x) , parseInt( y));
+                document.getElementById("z").value = obj.sub();
+            },false);
+        }
+    </script>
+</head>
+<body>
+   X :  <input type="text" id="x" /></br>
+   y :  <input type="text" id="y" /></br>
+   z :  <input type="text" id="z" disabled /></br>
+   <input type="button" value="Add" id="btnAdd" /></br>
+   <input type="button" value="Sub" id="btnSub" />
+</body>
+</html>

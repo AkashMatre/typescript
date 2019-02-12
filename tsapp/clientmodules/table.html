@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./module.js"></script>
+
+    <script>
+        window.onload = function(){
+            var btn =  document.getElementById("btnAdd");
+            btn.addEventListener("click",function(){
+                var prodid = parseInt(document.getElementById("prodid").value);
+                var prodname = document.getElementById("prodname").value
+                var stropss = new StringOperations();
+                document.getElementById("dv").innerHTML =  stropss.addProduct(prodid,prodname);
+            },false);
+            var stropss = new StringOperations();
+            document.getElementById("dv").innerHTML = stropss.getTable();
+        }
+    </script>
+</head>
+<body>
+    Product Id :  <input type="text" id="prodid"/> </br>
+    Prod Name : <input type="text" id="prodname" /></br>
+</br></br>
+    <button id="btnAdd" >add Products</button>
+
+    <div id="dv"></div>
+</body>
+</html>
