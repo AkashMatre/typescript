@@ -1,1 +1,20 @@
-hi
+1. Create array of string and perform  following operation onit.
+	-Sort array base on length of each string as well as alphabetic order of it.
+	-filter out the array based on a specific criteria for each string in array.
+  
+PATH :- tsapp/arrayIteration.ts
+PATH :- tsapp/arrayMethods.ts
+PATH :- tsapp/SearchEngine.ts
+
+
+2. Create a tuple storing dictiionary of products like product id,product Name Category Namee, Manufacturing Name and base name.
+	-Sort Productdata based on product Name.
+	-create a search functionality which should search the record based on criteria passed to function.
+	- Eliminate duplicate entries in product if ducplicate productid is entered in the text . At right, error msg must be displayed.
+	-Use save button for add and update product.
+	-Add checkbox in product table header and also generate checkbox for each product row. When header box is checked checkbox for every table row should be checked or unchecked.
+	- Do it in vice versa.
+	- Add functionality to delete checked row.
+  
+  
+  PATH:- tsapp/tuples.ts
